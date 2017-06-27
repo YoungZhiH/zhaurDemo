@@ -1,0 +1,335 @@
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img 
+    margin: 0
+    padding: 0
+
+body
+   font-family: "微软雅黑"
+    
+fieldset,img 
+    border: 0
+
+a
+    color inherit
+    text-decoration: none;
+    
+
+
+address,caption,cite,code,dfn,th,var 
+    font-style: normal
+    font-weight: normal
+
+ul,ol 
+    list-style: none
+
+input 
+    padding-top: 0
+    padding-bottom: 0
+    font-family: "微软雅黑"
+
+input::-moz-focus-inner 
+    border: 0
+    padding: 0
+
+select,input 
+    vertical-align: middle
+
+select,input,textarea 
+    font-size: 12px
+    margin: 0
+
+input[type="text"],input[type="password"],input[type="button"],input[type="submit"],textarea 
+    outline-style: none
+    -webkit-appearance: none
+
+input[type="button"],input[type="submit"]
+    cursor pointer
+
+textarea 
+    resize: none
+
+table 
+    border-collapse: collapse
+
+cite
+    display block
+    
+box-s()
+    -webkit-box-shadow arguments
+    -moz-box-shadow arguments
+    box-shadow arguments
+
+border-radius()
+  -webkit-border-radius arguments
+  -moz-border-radius arguments
+  border-radius arguments
+
+ani(n)
+    -webkit-animation-duration:n
+    animation-duration:n
+    -webkit-animation-fill-mode:both
+    animation-fill-mode:both
+
+
+transitionAll(val)
+    -webkit-transition: all val;
+    -moz-transition: all val;
+    transition: all val;
+
+col(n)
+    color n
+    
+visibility()
+    visibility: hidden
+    
+hide()
+    display none
+    
+fl()
+    float left
+
+fr()
+    float right
+
+tc()
+    text-align center
+
+tl()
+    text-align left
+
+tr()
+    text-align right
+
+bor(n)
+    border n
+
+bort(n)
+    border-top n
+
+borb(n)
+    border-bottom n
+
+borl(n)
+    border-left n
+
+borr(n)
+    border-right n
+      
+db()
+    display block
+
+dbl()
+    display inline-block
+    
+pad(n)
+  padding n
+
+mar(n)
+    margin n
+
+mar(n)
+    margin n
+
+marl(n)
+    margin-left n
+
+marr(n)
+    margin-right n
+
+marb(n)
+    margin-bottom n
+
+mart(n)
+    margin-top n
+
+padl(n)
+    padding-left n
+
+padr(n)
+    padding-right n
+
+padb(n)
+    padding-bottom n
+
+padt(n)
+    padding-top n
+
+abs()
+    position absolute
+
+rel()
+    position relative
+
+fixed()
+    position fixed
+
+w(n)
+    width n
+
+h(n)
+    height n
+
+wh(w,h)
+    width w
+    height h
+
+t(n)
+    top n
+    
+l(n)
+    left n
+
+r(n)
+    right n
+
+b(n)
+    bottom n
+
+lh(n)
+    line-height n
+    
+trbl(t,r,b,l)
+    top t
+    right r
+    bottom b
+    left l
+    
+overh()
+    overflow hidden
+
+overa()
+    overflow auto
+    
+bg-color(col)
+    background-color col
+
+bg-img(img)
+    background  url(img) no-repeat center
+
+bg-img-x(img)
+    background  url(img) repeat-x center
+
+bg-img-y(img)
+    background  url(img) repeat-y center
+
+vendor(prop, args)
+    -webkit-{prop} args
+    -ms-{prop} args
+    -moz-{prop} args
+    {prop} args
+
+fs(fs)
+    font-size fs
+    
+marauto()
+    margin auto
+
+img
+    bor(0)
+      
+.marauto
+    marauto()
+    
+.rel
+    rel()
+    
+.fl
+    fl()
+
+.fr
+    fr()
+
+.tl
+    tl()
+
+.tr
+    tr()
+
+.tc
+    tc()
+
+
+.ul_li_fl li 
+    fl()
+
+.clears:after
+    display: block;
+    content: '';
+    visibility: hidden;
+    clear: both
+
+.clear 
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0
+
+.hide 
+   hide()
+
+.hidden
+    visibility()
+    
+.f20
+    fs(20px)
+        
+.f18
+    fs(18px)
+
+.f16
+    fs(16px)
+
+.f14
+    fs(14px)
+
+.f12
+    fs(12px)
+
+.pointer
+    cursor pointer
+
+opa(n)
+    filter unquote('progid:DXImageTransform.Microsoft.Alpha(opacity=70)')
+    vendor(opacity , n)
+
+.modal-popup
+    background #000
+    fixed()
+    w(100%)
+    h(100%)
+    t(0)
+    l(0)
+    r(0)
+    b(0)
+    overa()
+    opa(.7)
+    z-index 88
+.flex
+    display: -webkit-box!important;
+    display: -webkit-flex!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    .flex-1
+        -webkit-flex-basis: 0;
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    .flex-2
+        -webkit-flex-basis: 0;
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -webkit-box-flex: 2;
+        -webkit-flex: 2;
+        -ms-flex: 2;
+        flex: 2;
+
+.animated
+   ani(.3s)
+   transitionAll(.8s)

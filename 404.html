@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>看起来你在太空中迷路了~</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<style>
+.parallax-1{top: 50%;left: 50%;margin-top: -400px;margin-left: -500px}.parallax-1{position: absolute;}
+.parallax-2{top: 50%;left: 50%;margin-top: -400px;margin-left: -1000px;width: 100%;}.parallax-2{position: absolute;}
+.parallax-3{top: 50%;left: 50%;margin-top: -400px;margin-left: -1000px;width: 100%;}.parallax-3{position: absolute;}
+#wrapper404 {z-index: 10;position: relative;margin-top: 500px;}
+.banner-mains{width: 100%;height: 900px;overflow: hidden;background: #000}
+.entry-title{font-size: 30px;font-weight: bold}
+#wrapper404 p{margin-top: 10px;font-size: 16px}
+#wrapper404 a{color:red;}
+</style>
+<body>
+  <div id="scene" class="banner-mains">
+    <ul>
+      <li class="layer parallax-1"  data-depth="0.90"><img src="./image/404spaceman.png"></li>
+      <li class="layer parallax-2"  data-depth="0.50"><img src="./image/404stars.png"></li>
+      <li class="layer parallax-3"  data-depth="0.20"><img src="./image/404stars2.png"></li>
+  </ul>
+  <center id="wrapper404">
+    <h1 class="moveDown entry-title white" >看起来你在太空中迷路了!</h1>
+    <p class="fadeIn2 colorCCC" >尝试返回我们的<a href="/">首页</a>吧</p>
+  </center>
+    <!-- <div class="parallax-ul" id="scene"> -->
+      <!-- <div class="parallax-5 layer" data-depth="0.80"> -->
+         <!-- <img src="http://sta.99elon.com/www/act/travel/image/parallax-5.png" > -->
+        <!-- <div class="stars404 "  ></div> -->
+      <!-- </div> -->
+      <!-- <img src="./image/404spaceman.png" alt=""  data-depth="0.80" class="layer" id="stars404"> -->
+  <!-- </div> -->
+<!--   <section class="bgImage" id="scene" data-friction-x="0.1"
+      data-friction-y="0.1"
+      data-scalar-x="25"
+      data-scalar-y="15"> -->
+    <!-- <div class="layer"  data-depth="0.80"><img src="./image/404spaceman.png" alt="" id="stars404"></div> -->
+    <!-- <div class="layer"  data-depth="0.50"><img src="http://www.kfd9999.hk/themes/views/activity/hd2017/knjx/images/move2-l.png" alt="" id="stars404"></div> -->
+    <!-- <center id="wrapper404"> -->
+      <!-- <h1 class="moveDown entry-title white" style="">看起来你在太空中迷路了!</h1> -->
+      <!-- <p class="fadeIn2 colorCCC" style="margin-bottom: 1em;">Maybe you were looking for one of our <a href="https://www.agens.no/projects/">recent projects</a>?</p> -->
+    <!-- </center> -->
+  <!-- </section> -->
+  </div>
+  <script src="./js/libs/jquery.min.js"></script>
+  <script src="./js/libs/parallxa/parallax.js"></script>
+<script>  
+$(function(){
+  var $html = $('html'),
+      $scene = $('#scene'),
+      $bannerMains = $('.banner-mains'),
+      $stars404 = $('#stars404');
+  $scene.parallax();
+  $bannerMains[0].style.height = window.innerHeight + 'px';
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+@import './public-stylus/index.styl'
+html,body
+  font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  
+.header-top-number
+    fs(26px)
+    color #ccc
+    borb(1px solid #D9D9D9)
+    background-color #f7f7f8
+  
+#app
+  w(640px)
+  mar(0 auto)
+  overflow hidden
+  
+.fade-enter-active, .fade-leave-active
+  transition: opacity .2s ease
+
+.fade-enter, .fade-leave-active
+  opacity: 0
+
+.child-view
+  position: absolute
+  transition: all .5s cubic-bezier(.55,0,.1,1)
+
+.slide-left-enter, .slide-right-leave-active
+  opacity: 0
+  -webkit-transform: translate(30px, 0)
+  transform: translate(30px, 0)
+
+.slide-left-leave-active, .slide-right-enter
+  opacity: 0
+  -webkit-transform: translate(-30px, 0)
+  transform: translate(-30px, 0)
+
+
+.outLeftInRight-transition,
+.fadeOutLeft-transition, 
+.fadeInLeft-transition 
+  transition: transform .3s ease-in-out;
+
+/* 进入时的状态，从右开始 */
+.outLeftInRight-enter,
+.fadeInLeft-enter,
+.fadeInLeft-leave 
+  transform: translateX(100%);
+
+/* 离开时的状态，向左移动 */
+.outLeftInRight-leave,
+.fadeOutLeft-enter,
+.fadeOutLeft-leave 
+  transform: translateX(-100%);
+
+.home-list-item
+  mart(10px)
+  li
+    color #494949
+    bg-color #f6f6f6
+    tc()
+    fs(26px)
+    lh(55px)
+    mar(5px)
+    a
+      db()
+  
+.book_item
+  li
+    dbl()
+    w(25%)
+    box-sizing: border-box
+    tc()
+    pad(0 5px 5px)
+    mar(0 0px 20px)
+    a
+      db()
+      wh(100%,100%)
+    .pic
+      h(200px)
+      w(100%)
+      overflow hidden
+      marb(10px)
+      img
+        max-width 100%
+        max-height 100%
+        w(100%)
+    h3
+        fs(24px)
+        white-space nowrap
+        overflow hidden
+        text-overflow ellipsis
+        font-weight normal
+        color #4e4e4e
+        
+.header-top-number
+  tc()
+  pad(16px 0)
+  z-index 4
+  rel()
+  a
+    mar(0 10px)
+  a:nth-child(1)
+    font-family '冬青雅黑'
+    col(#ff8080)
+  a:nth-child(2)
+    col(#2384E8)
+  a:nth-child(3)
+    col(#E4A813)
+  a:nth-child(4)
+    col(#13b327)
+  a:nth-child(5)
+    col(#e85205)
+  a:nth-child(6)
+    col(#584029)
+  
+.movie_head
+  display: -webkit-box;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-align: center;
+  align-items: center;
+  fs(30px)
+  pad(35px 10px 20px)
+  .ui-flex-1
+    -webkit-box-flex: 1;
+    flex: 1;
+    display: block;
+  .ui-flex-right 
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: flex;
+
+.movie_head_r
+  color #42bd56
+  fs(24px)
+
+
+.fade-enter-active, .fade-leave-active {
+  transition: all .5s
+}
+// .fade-enter{
+//   opacity: 0;
+//   transform translateX(100px)
+// }
+// .fade-leave-active {
+//   opacity: 0
+//   transform translateX(100px)
+// }
+
+.feed-content
+  pad(20px 0)
+  fs(18px)
+  borb(1px solid #f3f3f3)
+  
+.feed-content-info
+  p
+    overflow: hidden;
+    text-align: justify;
+    color: #aaa;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    mart 10px
+    lh(1.8)
+  h3
+    fs(30px)
+
+.feed-content-img
+  padl(20px)
+  img
+    max-width 100%
+  
+.feed-content-img
+  h(200px)
+  overflow hidden
+  
+#home
+  pad(0 10px)
+
+.loading-center
+  mar(30px 0)
+
+#banner
+    mart(10px)
+    height: 460px;
+    overflow: hidden;
+    position: relative;
+    ul
+      h(100%)
+    ul li
+      fl()
+      rel()
+      img
+        w(100%)
+        max-width 100%
+        max-height 100%
+      
+.pic
+  h(280px)
+  img
+    max-height 100%
+    max-width 100%
+    
+.book-list h3
+    tc()
+    fs(26px)
+    font-weight normal
+    overflow hidden
+    white-space nowrap
+    text-overflow ellipsis
+
+.scroll_pic
+  marl(15px)
+
+.gobal-title
+  fs(30px)
+  pad(35px 10px 20px)
+
+.type-list
+  bort(1px solid #eee)
+  mar(0% 2% 5%)
+  li
+    text-indent 10px
+    fs(26px)
+    col(#42bd56)
+    borr(1px solid #eee)
+    borb(1px solid #eee)
+    pad(4% 0 )
+    w(48%)
+    dbl()
+    span
+      color: #ccc;
+      float: right;
+      font-weight: bold;
+      display: inline-block;
+      border-right: solid 1px #ccc;
+      border-bottom: solid 1px #ccc;
+      width: .5rem;
+      height: .5rem;
+      transform: rotate(-45deg);
+      margin-top: 1rem;
+      marr(15px)
+  li:nth-child(even)
+    borr(none)
+
+.icon-header-back
+    border-right: solid 3px #ccc;
+    border-bottom: solid 3px #ccc;
+    width: 15px;
+    height: 15px;
+    transform: rotate(-225deg);
+    dbl()
+    abs()
+    t(25px)
+    l(25px)
+  
+.nav-tabs
+    background-color #fff
+    fs(24px)
+    li
+      dbl()
+      w(50%)
+      pad(10px 0)
+      color #5f646e
+      tc()
+    li.active
+        color #0894ec
+   
+  
+.v-tabs-item
+  fs(22px)
+  col(#3d4145)
+  p
+    fs(24px)
+    pad(15px 10px)
+    borb(1px solid #e1e1e1)
+    db()
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
+.tab-list
+  rel()
+  mart(10px)
+  li
+    box-shadow: 0 0.05rem 0.1rem rgba(195, 182, 182,.3);
+    background #fff
+    rel()
+    marb(10px)
+      
+.gobal-content
+  div
+    pad(15px 10px)
+
+.component-fade-enter-active, .component-fade-leave-active 
+  transition: opacity .3s ease;
+
+.component-fade-enter, .component-fade-leave-active 
+  opacity: 0;
+
+.relative
+  rel()
+
+
+.center-box
+  mar(0 10px)  
+  // clear both
+  // ul li
+  //   fl()
